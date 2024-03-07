@@ -1,0 +1,77 @@
+<html>
+
+<head>
+    <title> cadastro turma</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background-image: url('https://img.freepik.com/vetores-gratis/fundo-aquarela-abstrato-pintado-a-mao_23-2149018547.jpg?size=626&ext=jpg&ga=GA1.1.1448711260.1706400000&semt=ais');
+            background-size: cover;
+            background-position: center;
+            font-family: 'Roboto', sans-serif;
+            font-size: 15px;
+            color: black;
+        }
+
+        h1 {
+            color: #fff;
+        }
+
+        button {
+            background-color: #9D4EDD;
+            color: #fff;
+            padding: 10px;
+            border-radius: 10px;
+            width: 85px;
+        }
+
+        h3 {
+            font-size: 25px;
+            color: #9D4EDD;
+        }
+
+        input {
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        .login {
+            padding: 50px;
+            background-color: #3C096C;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 35px;
+            width: 300px;
+        }
+        .error-message{
+            color: #fff;
+        }
+    </style>
+   
+
+    <div class="login">
+        <div class="error-message">
+            <!-- Mensagem de erro será inserida aqui -->
+        </div>
+        <form action="/cad_turma" method="post">
+            <h1> Cadastro turma</h1>
+            <h3>Turma</h3>
+            <input type="text" name="turma" placeholder="turma"></input><br><br>
+            <button type="submit">Cadastrar</button><br>
+            <div class="welcome-message">
+                <!-- Mensagem de erro será inserida aqui -->
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

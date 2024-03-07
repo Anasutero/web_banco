@@ -1,0 +1,74 @@
+<html>
+
+<head>
+    <title> cadastro atividade </title>
+</head>
+
+<body>
+    <style>
+        body {
+            background-image: url('https://media.istockphoto.com/id/1313104696/pt/foto/purple-background-painting-on-canvas-acrylic-painting.webp?b=1&s=170667a&w=0&k=20&c=wdF0yj9Ccp-QQbWt_SmdDLUCMXFzVa8bGgpm0fqJ4rs=');
+            background-size: cover;
+            background-position: center;
+            font-family: 'Roboto', sans-serif;
+            font-size: 15px;
+            color: black;
+        }
+
+        h1 {
+            color: #fff;
+        }
+
+        button {
+            background-color: #9D4EDD;
+            color: #fff;
+            padding: 10px;
+            border-radius: 10px;
+            width: 85px;
+        }
+
+        h3 {
+            font-size: 25px;
+            color: #9D4EDD;
+        }
+
+        input {
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        .login {
+            padding: 50px;
+            background-color: #3C096C;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 35px;
+            width: 300px;
+        }
+        .error-message{
+            color: #fff;
+        }
+    </style>
+   
+
+    <div class="login">
+        <div class="error-message">
+            <!-- Mensagem de erro será inserida aqui -->
+        </div>
+        <form action="/cad_ativ" method="post" id="cadastroForm">
+            <h1> Cadastro atividade</h1>
+            <h3> Descrição</h3>
+            <input type="text" name="descricao" placeholder="descricao"> </input><br><br>
+            <button type="submit">Cadastrar</button><br>
+        </form>
+    </div>
+
+</body>
+
+</html>

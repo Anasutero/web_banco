@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Turma</title>
+    
+</head>
+
+<style>
+
+*{
+    padding: 0; 
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+
+     body {
+            font-family: 'Roboto', sans-serif;
+            background-size: cover;
+            background-color: #fff;
+            background-image: url('https://e1.pxfuel.com/desktop-wallpaper/524/229/desktop-wallpaper-backgrounds-purple-group-purple-background.jpg');
+        }
+
+        header {
+            /* position: fixed; */
+            /* Fixa a navbar no topo da página */
+            top: 0;
+            /* Posiciona a navbar no topo */
+            width: 100%;
+            /* Faz a navbar ocupar toda a largura */
+            background-color: #240046;
+            box-shadow: 0px 7px 20px #3C096C;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            padding: 1.0rem 6rem;
+            text-align: center;
+        }
+
+        .sair button {
+            margin-top: 13px;
+            border: none;
+            background-color: #9D4EDD;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            color: #fff;
+            font-weight: 500;
+            width: 80px;
+        }
+
+        .sair button:hover {
+            background-color: #0e0218;
+        }
+
+.container {
+    margin-top: 250px;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #dddada;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #3C096C;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #8763a8
+}
+#container1{
+display:flex;
+justify-content:space-around;
+}
+ 
+#linha-horizontal {
+    width: 750px;
+    border: 1px solid #000;
+}
+#cadastro1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+}
+#botoes-container {
+    display: flex;
+    justify-content: space-around; /* Alinha os botões horizontalmente com espaçamento uniforme */
+    align-items: center; /* Alinha os botões verticalmente */
+}
+#botao2{
+height:40px;
+width:80px;
+background-color:#69b578;
+color:white;
+border-radius:10px;
+margin:10px;
+
+}
+
+#botao{
+height:40px;
+width:60px;
+background-color:#ac75da;
+color:white;
+border-radius:10px;
+margin:10px;
+
+}
+
+.container1{
+margin-bottom: 50px;
+  text-align: center;
+}
+
+#logar{
+font-size: 16px;
+background-color:#5A189A;
+color:white;
+padding:15px;
+border-radius:10px;
+width:250px;
+text-align:center;
+}
+h1{
+color:#ffffff;
+font-size:25px;
+}
+h2{
+margin:25px;
+}
+
+#insira{
+min-width:1700px;
+max-width:1700px;
+padding:15px;
+background-color:#ac75da;
+border-radius:10px;
+border-color:#240046;
+margin:15px;
+color: #000;
+}
+
+h3{
+display: flex;
+justify-content: space-around; /* Alinha os botões horizontalmente com espaçamento uniforme */
+align-items: center;
+margin:25px;
+font-size: 15px;
+}
+button#cadastrar-ativ{
+    margin-top: 13px;
+    margin-left: auto; /* Isso move o botão para a direita */
+    border: none;
+    background-color: #3C096C;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    width: 250px;
+    text-align: center;
+}
+
+button#cadastrar-ativ:hover {
+    background-color: #8763a8;
+}
+ 
+</style>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="titulo">
+                <h1>Registro das Atvidades</h1>
+            </div>
+            <div class="sair">
+                <button>Sair</button>
+            </div>
+        </nav>
+    </header>
+    <button id="cadastrar-ativ">Cadastrar atividade</button>
+    <div class="container">
+        <!-- Mensagem de erro será inserida aqui -->
+        <h2> Atividades</h2>
+        
+         <!-- ARRUMAR -->
+         <form action="/cad_ativ" method="post" id="cadastroForm">
+            <div class="form-group">
+                    
+            </div>
+            <div class="welcome-message">
+                <!-- Mensagem de erro será inserida aqui -->
+            </div>
+        </form>
+      
+        <div id="container1">
+ 
+<h3>Codigo</h3>
+<h3>Nome turma</h3>
+<h3>Ação </h3>
+</div>
+ 
+<div id="linha-horizontal"></div>
+ 
+<div  id="cadastro1">
+<h3>1</h3>
+<h3>Pwbe</h3>
+<div id="botoes-container">
+    <button id="botao2">Visualizar</button>
+    <button id="botao">Excluir</button>
+</div>
+</div>
+ 
+<div id="linha-horizontal"></div>
+
+<div  id="cadastro1">
+<h3>2</h3>
+<h3>BD</h3>
+<div id="botoes-container">
+    <button id="botao2">Visualizar</button>
+    <button id="botao">Excluir</button>
+</div>
+</div>
+
+<div id="linha-horizontal"></div>
+
+<div  id="cadastro1">
+<h3>3</h3>
+<h3>pwbe</h3>
+<div id="botoes-container">
+    <button id="botao2">Visualizar</button>
+    <button id="botao">Excluir</button>
+</div>
+</div>
+
+<div id="linha-horizontal"></div>
+
+
+
+
+</form>
+
+</div>
+    </div>
+</body>
+</html>
